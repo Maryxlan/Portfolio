@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deine Modemarke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vfu1plv.css">
+    <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+                
+
+
+    <header>
+        <div class="section_1">
+            <div class="rotate">
+                 <div class="messer">
+                     <img class="logo" src="Design ohne Titel (1).png" alt="Löffel">
+                 </div>
+             </div>
+             </div>
+             <div class="section_2">
+        <h1>Beispiel Menü</h1>>
+    </div>
+
+    </header>
+
+    <div id="videotag">
+
+    <video controls loop autoplay muted >
+        <!-- Die Videoquelle(n) -->
+        <source src="Restaurant Menu.mp4" type="video/mp4">
+        <!-- Fallback für ältere Browser -->
+        Dein Browser unterstützt das Video-Tag nicht.
+    </video>
+
+    </div>
+
+        <nav class="sticky">
+            <ul>
+                <li><a href="Vorspeise.html">Vorspeise</a></li>
+                <li><a href="Hauptspeise.html">Hauptspeise</a></li>
+                <li><a href="Nachtisch.html">Nachtisch</a></li>
+            
+            </ul>
+        </nav>
+        
+    <section>
+    <div class="outer">
+    <div class="columns">
+    <div class="column_">
+        <div class="firstpic">
+        <img src="https://static.wixstatic.com/media/c18e117763dc4b60ba891139fa28c8d7.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/c18e117763dc4b60ba891139fa28c8d7.jpg" alt="Cooking"> 
+        </div>
+    </div>
+        <div class="column_">
+        <div class="text" ><p>Unsere traditionelle Küche hat sich auf der ganzen Welt  bewiesen. Unsere Gerichte sind mit feinsten Zutaten zubereitet und weltbekannt. Lass Sie sich die Geschmacksexpolosion auf der Zunge zergehen.
+            Die italienische Küche ist weltweit für ihre köstlichen Aromen, frischen Zutaten und kulinarische Vielfalt bekannt. Ein kulinarisches Abenteuer durch die italienische Küche ist wie eine Reise durch die verschiedenen Regionen Italiens, jede mit ihren einzigartigen Geschmacksrichtungen und kulinarischen Traditionen.
+            <br>
+            <br>
+            Eine Reise durch die italienische Küche beginnt oft mit Antipasti, einer Auswahl an Vorspeisen, die von regionalem Käse und luftgetrocknetem Schinken bis zu eingelegtem Gemüse reichen. Pizza, eine Ikone der italienischen Küche, hat ihren Ursprung in Neapel und wird mit knusprigem Teig, Tomatensauce, Mozzarella und einer Vielzahl von Belägen zubereitet.
+            Die Pastaküche Italiens ist so vielfältig wie das Land selbst. 
+            <br>
+            <br>
+            Die italienische Küche legt auch großen Wert auf Fleischgerichte, wie zum Beispiel das berühmte Saltimbocca alla Romana oder das herzhafte Ossobuco aus Mailand. Risotto, ein cremiges Reisgericht, ist eine weitere Köstlichkeit, die in verschiedenen Variationen mit Pilzen, Meeresfrüchten oder Safran zubereitet wird.
+           
+            </p>
+        </div>
+    </div>  
+    </div>
+    </section>
+
+    
+    
+    <div class="line">
+
+    <div class="rotate"> 
+    <div><img class="pizza" src="Pizza.png" alt="pizza"></div>
+    </div>
+
+    <div class="info" ><p>Schreiben Sie eine Zutat und fügen Sie es zu der Wunschliste hinzu</p></div>
+
+
+    
+        <div class="rotate"> 
+        <div><img class="pizza" src="Pizza.png" alt="pizza"></div>
+        </div> 
+        </div>
+
+<div class="eingabe">
+    <input type="text" id="neuesElementInput" placeholder="">
+    <button onclick="addElement()">Hinzufügen</button>
+</div>
+
+
+    <ol  id="meineListe"> </ol>
+
+      <script>
+        function addElement() {
+          var inputFeld = document.getElementById('neuesElementInput');
+          var inputValue = inputFeld.value;
+    
+          if (inputValue.trim() !== '') {
+            var meineListe = document.getElementById('meineListe');
+            var neuesElement = document.createElement('ol');
+            neuesElement.textContent = inputValue;
+            meineListe.appendChild(neuesElement);
+            inputFeld.value = ''; // Leere das Eingabefeld
+    
+            // Ausgabe des eingegebenen Listenelements
+            var ausgabeListe = document.getElementById('ausgabeListe');
+            var ausgabeElement = document.createElement('ol');
+            ausgabeElement.textContent = inputValue;
+            ausgabeListe.appendChild(ausgabeElement);
+
+
+
+            inputFeld.value = ''; // Leere das Eingabefeld
+    
+
+            }
+        }
+      </script>
+    
+
+    <footer>
+        <p>&copy; 2024 Deine Gerichte. Alle Rechte vorbehalten.</p>
+    </footer>
+
+   
+</body>
+
+</html>

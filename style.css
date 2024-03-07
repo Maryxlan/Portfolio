@@ -1,0 +1,241 @@
+*{box-sizing: border-box;}
+body {
+    background-color: #35260d;
+    box-sizing: border-box;
+}
+
+.section_1{
+    position: absolute; /* Positionierung relativ zum nächsten positionierten Elternelement */
+    top: 10px; /* Oben am Rand */
+    left: 20px; 
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+header {
+    background-image: url(b.jpeg);
+      position:relative;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-family:  p22-torrone, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #f8cdaa;
+    display: flex; 
+}
+
+#videotag{
+    max-width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    margin: 0 auto; /
+
+}
+
+video{
+    padding-bottom: 55%;
+    position:sticky;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+nav{
+    padding: 10px;
+      text-align: center;
+      display: flex; /* Flexbox-Container verwenden */
+      background-color: #ffffff;
+      justify-content: center;
+    border-bottom: 2px solid #ffffff;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+nav li {
+ margin-right:30%;
+
+}
+
+nav li a {
+    font-style: normal;
+    font-weight: 300;
+    color:#35260d;
+}
+
+nav li :hover{
+    background-color: rgb(255, 228, 177);
+    transition: all 0.3s ease;
+}
+
+
+a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    color:#634538;
+    font-size: 22px;
+}
+
+section{
+    display: block;
+    border-bottom: 2px solid #fcfcfc;
+}
+.outer{
+    position: relative;
+    text-align: right;
+}
+
+.columns{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+.column_{
+    display: block;
+    box-sizing: border-box;
+    margin: 5%;
+    
+}
+.firstpic{
+    margin-top: 10;
+    max-width: calc(100% + 4px);
+    z-index: 0;
+    flex: 1;
+}
+.firstpic img{
+    width: 100%; /* Das Bild nimmt 100% der Breite der Spalte ein */
+      height: 100%; /* Das Bild nimmt 100% der Höhe der Spalte ein */
+      object-fit: cover;
+}
+
+.eingabe{
+    margin-top: 5%;
+    text-align: center;
+}
+#meineListe{
+    justify-content: center;
+    color:#fffffe;
+    font-size: 24px;
+    list-style-type: none;
+    margin-top: 10%;
+    text-align: center;
+    background-color: #b9a1a1;
+
+}
+
+ol{
+    margin-bottom: 10px;
+    padding: 10px;
+    word-spacing: 5px;
+
+}
+.price{
+    position: fixed;
+
+}
+
+.text{
+
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.info{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    text-align:  center;
+    font-size: 40px;
+    color:#fff1f1;
+    font-size: 24px;
+
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+    	
+.pizza{
+    width: 150px;
+    height: 150px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border-style: double;
+    border-radius: 20px;
+    background-color: #fff8d0;
+    color: #000000;
+    transition: background-color 0.3s ease;
+  }
+
+
+  input{
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    border-style: double;
+    border-radius: 20px;
+    background-color: #fff8d0;
+    border-right: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+
+.containerone{
+    margin-top: 5%;
+    margin-left: 5%;
+
+}
+.kette{
+    display: block;
+    margin-top: 10px; /* Abstand zwischen den Bildern */
+}
+
+.rotate{
+    display: inline-block;
+    -webkit-animation: rotate 4s linear infinite;
+    animation: rotate 4s linear infinite;
+    }  
+    @keyframes rotate {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
